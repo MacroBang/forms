@@ -132,7 +132,7 @@ input[type="submit"]:hover{
 #login{
   position: absolute;
   top: 0;
-  width: 85%;   
+  width: 95%;   
   padding: 18px 6% 60px 6%;
   margin: 0 0 35px 0;
   background: var(--white);
@@ -211,5 +211,34 @@ input[type="submit"]:hover{
   100% {
     opacity: 0;
     transform: translateX(-20px);
+  }
+}
+
+/* =============== RESPONSIVIDADE PARA TABLETS ================= */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  #cadastro, 
+  #login{
+    width: 85%;   
+    padding: 18px 6% 60px 6%;
+    margin: 0 0 35px 0;
+  }
+}
+
+/* ======================== RESPONSIVIDADE PARA CELULARES ====================== */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  #cadastro, 
+  #login{
+    width: 71%;   
+    margin: 0 0 0 50px;
   }
 }

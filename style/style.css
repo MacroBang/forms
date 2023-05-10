@@ -88,6 +88,7 @@ a {
   list-style: none;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 body {
@@ -182,10 +183,6 @@ nav {
 
   h4 {
     font-size: 1.2rem;
-  }
-
-  body{
-    overflow-x: hidden;
   }
 
   /* =================== NAVBAR =================== */
