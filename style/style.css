@@ -88,13 +88,13 @@ a {
   list-style: none;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  overflow: hidden;
 }
 
 body {
   line-height: var(--fs-1);
   color: var(--white);
   background: var(--spanish-gray);
+  overflow: hidden;
 }
 
 /* CONFIG BOTÃO */
@@ -169,20 +169,8 @@ nav {
     width: var(--container-width-md);
   }
 
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-  }
-
-  h3 {
-    font-size: 1.4rem;
-  }
-
-  h4 {
-    font-size: 1.2rem;
+  body{
+    overflow: hidden;
   }
 
   /* =================== NAVBAR =================== */
@@ -237,6 +225,10 @@ nav {
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
+  }
+
+  body{
+    overflow: hidden;
   }
 
   /* ============== NAVBAR =============== */
