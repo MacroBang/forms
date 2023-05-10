@@ -30,8 +30,7 @@
         <li><a href="mercado.html">Mercado</a></li>
         <li><a href="about.html">Sobre nós</a></li>
         <li><a href="contato.html">Contato</a></li>
-        <li><a href="cadastro.html">Entre</a></li>
-        <li><a href="cadastro.html">Cadastre-se</a></li>
+        <li><a href="cadastro.html">Entre ou Cadastre-se</a></li>
       </ul>
       <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
       <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
@@ -40,24 +39,85 @@
 
   <!-- FORMULARIO LOGIN -->
 
-  <form action="#" method="post" class="container_form">
-    <h2>Login</h2>
-    <input id="email" type="email" name="email" placeholder="Seu Email" required />
-    <input id="password" type="password" name="password" placeholder="Sua senha" required />
-    <button type="submit" class="btn btn-primary">Entrar</button>
-  </form>
+  <div class="container">
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
 
+    <div class="content">
 
-  <!-- FORMULARIO CADASTRO -->
+      <div id="login">
+        <form method="post" action="">
+          <h1>Login</h1>
+          <p>
+            <label for="email_login">Seu Email</label>
+            <input id="email_login" name="email_login" type="email" required/>
+          </p>
 
-  <form action="#" method="post" class="cadastro">
-    <h2>Cadastre-se</h2>
-    <input id="name" type="text" name="name" placeholder="Nome e sobrenome" required />
-    <input id="email" type="email" name="email" placeholder="Seu email" required />
-    <input id="phone" type="tel" name="phone" placeholder="Número de celular" required />
-    <input id="password" type="password" name="password" placeholder="Senha" required />
-    <button type="submit" class="btn btn-primary">Cadastrar</button>
-  </form>
+          <p>
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha_login" type="password" required/>
+          </p>
+
+          <p>
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" />
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+
+          <p>
+            <input type="submit" value="Logar" />
+          </p>
+
+          <p class="link">
+            Ainda não tem conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action="">
+          <h1>Cadastro</h1>
+
+          <p>
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" type="text" required/>
+          </p>
+
+          <p>
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" type="email" required/>
+          </p>
+
+          <p>
+            <label for="phone_cad">Número de telefone</label>
+            <input id="phone_cad" name="phone_cad" type="tel" required/>
+          </p>
+
+          <p>
+            <label for="cpf_cad">Seu CPF</label>
+            <input id="cpf_cad" name="cpf_cad" type="text" required/>
+          </p>
+
+          <p>
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" type="password" required/>
+          </p>
+
+          <p>
+            <input type="submit" value="Cadastrar" />
+          </p>
+
+          <p class="link">
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script/script.js"></script>
 </body>
 
 </html>

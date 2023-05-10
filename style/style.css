@@ -13,8 +13,8 @@
     --black: #000000;
     --onyx: #454545;
     --shadow: #00000099;
-    --color-succes: #00bf8e;
-    --color-warning: #f7c94b;
+    --success: #00bf8e;
+    --warning: #f7c94b;
     --color-danger: #f75842;
 
     /* tipografia */
@@ -115,6 +115,7 @@ img {
     padding: 1rem 2.5rem;
     border: 1px solid transparent;
     border-radius: 1.5rem;
+    font-size: var(--fs-8);
     font-weight: 500;
     transition: var(--transition);
 }
