@@ -230,7 +230,6 @@ input[type="submit"]:hover{
   #login{
     width: 85%;
     margin: 0 auto;
-    text-align: center;
   }
 }
 
@@ -245,6 +244,5 @@ input[type="submit"]:hover{
   #login{
     width: 80%;
     margin: 25px 20px;
-    text-align: center;
   }
 }
