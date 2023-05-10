@@ -16,11 +16,12 @@ a.links{
 
 .content{
   width: 500px;
-  height: 100vh;
+  height: 600px;
   display: flex;  
   margin: 80px auto;
   position: relative;
   align-items: center;
+  overflow: hidden;
 }
 
 .container{
