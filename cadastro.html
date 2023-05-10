@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market name</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./style/cadastro.css" />
+
+  <!-- GOOGLE FONT LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+</head>
+
+<body>
+  <!-- BARRA DE NAVEGAÇÃO -->
+  <nav>
+    <div class="container nav_container">
+      <a href="index.html">
+        <h4>Market Name</h4>
+      </a>
+      <ul class="nav_menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="descontos.html">Descontos</a></li>
+        <li><a href="mercado.html">Mercado</a></li>
+        <li><a href="about.html">Sobre nós</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="cadastro.html">Entre</a></li>
+        <li><a href="cadastro.html">Cadastre-se</a></li>
+      </ul>
+      <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+      <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+    </div>
+  </nav>
+
+  <!-- FORMULARIO LOGIN -->
+
+  <form action="#" method="post" class="container_form">
+    <h2>Login</h2>
+    <input id="email" type="email" name="email" placeholder="Seu Email" required />
+    <input id="password" type="password" name="password" placeholder="Sua senha" required />
+    <button type="submit" class="btn btn-primary">Entrar</button>
+  </form>
+
+
+  <!-- FORMULARIO CADASTRO -->
+
+  <form action="#" method="post" class="cadastro">
+    <h2>Cadastre-se</h2>
+    <input id="name" type="text" name="name" placeholder="Nome e sobrenome" required />
+    <input id="email" type="email" name="email" placeholder="Seu email" required />
+    <input id="phone" type="tel" name="phone" placeholder="Número de celular" required />
+    <input id="password" type="password" name="password" placeholder="Senha" required />
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+</body>
+
+</html>
