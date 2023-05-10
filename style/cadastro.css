@@ -17,17 +17,15 @@ a.links{
 .content{
   width: 500px;
   height: 600px;
-  display: flex;  
-  margin: 80px auto;
   position: relative;
-  align-items: center;
+  margin: 0 auto;
+  width: 450px;
+  height: 700px;
 }
 
 .container{
   margin: 0;
   padding: 0;
-  width: 450px;
-  height: 700px;
 }
 
 h1{
@@ -230,9 +228,9 @@ input[type="submit"]:hover{
 
   #cadastro, 
   #login{
-    width: 85%;   
-    padding: 18px 6% 60px 6%;
-    margin: 0 0 35px 0;
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
@@ -245,7 +243,8 @@ input[type="submit"]:hover{
 
   #cadastro, 
   #login{
-    width: 70%;   
-    margin: 0 0 0 30px;
+    width: 80%;
+    margin: 25px 20px;
+    text-align: center;
   }
 }
