@@ -1,17 +1,18 @@
 :root{
-
     /* cores */
 
-    --spanish-gray: hsl(0,0%,60%);
-    --sonic-silver: hsl(0,0%,47%);
-    --seric-black: hsl(0,0%,13%);
-    --salmon-pink: hsl(353,100%,78%);
-    --sandy-brown: hsl(29,90%,65%);
-    --bittersweet: hsl(0,100%,78%);
-    --ocean-green: hsl(152,51%,52%);
-    --cultured: hsl(0,0%,93%);
-    --white: hsl(0,100%,100%);
-    --onyx: hsl(0,0%,27%);
+    --spanish-gray: #999999;
+    --sonic-silver: #787878;
+    --seric-black: #212121;
+    --salmon-pink: #ff8f9c;
+    --sandy-brown: #f6a355;
+    --bittersweet: #ff8f8f;
+    --ocean-green: #46c389;
+    --cultured: #ededed;
+    --white: #ffffff;
+    --black: #000000;
+    --onyx: #454545;
+    --shadow: #00000099;
 
     /* tipografia */
     
@@ -33,10 +34,138 @@
     --weight-300: 600;
     --weight-300: 700;
 
-    /* border-radius */
+    /* RESPONSIVIDADE */
 
-    --border-radius-md: 10px;
-    --border-radius-sm: 5px;
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
 
-    /* transition */
+    /* TRANSIÇÃO */
+
+    --transition: all 400ms ease;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: var(--fs-1);
+  color: var(--white);
+  background: var(--spanish-gray);
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+a {
+  color: white;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* CONFIG BOTÃO */
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 1rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+  
+.btn:hover {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+  
+.btn-primary {
+    background: var(--color-danger);
+    color: white;
+}
+
+/* NAVBAR */
+
+nav{
+    background: transparent;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+    cursor: pointer;
+}
+
+.window-scroll {
+    background: var(--sandy-brown);
+    box-shadow: 0 1rem 2rem var(--shadow);
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav button{
+    display: none;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav_menu a {
+    font-size: var(--fs-7);
+    transition: var(--transition);
+}
+
+.nav_menu a:hover {
+    color: var(--sandy-brown);
 }
