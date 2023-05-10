@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 4rem;
-    height: 30rem;
+    height: 35rem;
     margin: 7rem auto;
     border-radius: 1rem;
   }
@@ -13,15 +13,9 @@
   
   .contact_aside {
     background: var(--sandy-brown);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 1rem;
     position: relative;
-    bottom: 10rem;
-  }
-  
-  .aside_image {
-    width: 12rem;
-    margin-bottom: 2rem;
   }
   
   .contact_aside h2 {
@@ -93,7 +87,7 @@
     margin-top: 1rem;
   }
   
-  /* ================= MEDIA QUERIES (TABLETS) ================= */
+  /* ================= RESPONSIVIDADE PARA TABLETS ================= */
   
   @media screen and (max-width: 1024px) {
       .contact{
@@ -119,7 +113,7 @@
       }
   }
   
-  /* ================= MEDIA QUERIES (PHONES) ================= */
+  /* ================= RESPONSIVIDADE PARA TELEFONES ================= */
   
   @media screen and (max-width: 600px) {
       .contact_container{

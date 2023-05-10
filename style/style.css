@@ -1,76 +1,54 @@
-:root{
-    /* cores */
+:root {
+  /* cores */
 
-    --spanish-gray: #999999;
-    --sonic-silver: #787878;
-    --seric-black: #212121;
-    --salmon-pink: #ff8f9c;
-    --sandy-brown: #f6a355;
-    --bittersweet: #ff8f8f;
-    --ocean-green: #46c389;
-    --cultured: #ededed;
-    --white: #ffffff;
-    --black: #000000;
-    --onyx: #454545;
-    --shadow: #00000099;
-    --success: #00bf8e;
-    --warning: #f7c94b;
-    --color-danger: #f75842;
+  --spanish-gray: #999999;
+  --sonic-silver: #787878;
+  --seric-black: #212121;
+  --salmon-pink: #ff8f9c;
+  --sandy-brown: #f6a355;
+  --bittersweet: #ff8f8f;
+  --ocean-green: #46c389;
+  --cultured: #ededed;
+  --white: #ffffff;
+  --black: #000000;
+  --onyx: #454545;
+  --shadow: #00000099;
+  --success: #00bf8e;
+  --warning: #f7c94b;
+  --color-danger: #f75842;
 
-    /* tipografia */
-    
-    --fs-1: 1.563rem;
-    --fs-2: 1.375rem;
-    --fs-3: 1.25rem;
-    --fs-4: 1.125rem;
-    --fs-5: 1.1rem;
-    --fs-6: 0.938rem;
-    --fs-7: 0.875rem;
-    --fs-8: 0.813rem;
-    --fs-9: 0.875rem;
-    --fs-10: 0.688rem;
-    --fs-11: 0.625rem;
+  /* tipografia */
 
-    --weight-300: 300;
-    --weight-300: 400;
-    --weight-300: 500;
-    --weight-300: 600;
-    --weight-300: 700;
+  --fs-1: 1.563rem;
+  --fs-2: 1.375rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.125rem;
+  --fs-5: 1.1rem;
+  --fs-6: 0.938rem;
+  --fs-7: 0.875rem;
+  --fs-8: 0.813rem;
+  --fs-9: 0.875rem;
+  --fs-10: 0.688rem;
+  --fs-11: 0.625rem;
 
-    /* RESPONSIVIDADE */
+  --weight-300: 300;
+  --weight-300: 400;
+  --weight-300: 500;
+  --weight-300: 600;
+  --weight-300: 700;
 
-    --container-width-lg: 80%;
-    --container-width-md: 90%;
-    --container-width-sm: 94%;
+  /* RESPONSIVIDADE */
 
-    /* TRANSIÇÃO */
+  --container-width-lg: 80%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
 
-    --transition: all 400ms ease;
+  /* TRANSIÇÃO */
+
+  --transition: all 400ms ease;
 }
 
 /* CONFIGURAÇÕES GERAIS */
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  line-height: var(--fs-1);
-  color: var(--white);
-  background: var(--spanish-gray);
-}
-
-.container{
-    width: var(--container-width-lg);
-    margin: 0 auto;
-}
 
 h1,
 h2,
@@ -98,78 +76,174 @@ h4 {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
-img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  line-height: var(--fs-1);
+  color: var(--white);
+  background: var(--spanish-gray);
 }
 
 /* CONFIG BOTÃO */
 
 .btn {
-    display: inline-block;
-    background: white;
-    color: black;
-    padding: 1rem 2.5rem;
-    border: 1px solid transparent;
-    border-radius: 1.5rem;
-    font-size: var(--fs-8);
-    font-weight: 500;
-    transition: var(--transition);
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 1rem 2.5rem;
+  border: 1px solid transparent;
+  border-radius: 1.5rem;
+  font-size: var(--fs-8);
+  font-weight: 500;
+  transition: var(--transition);
 }
-  
+
 .btn:hover {
-    background: transparent;
-    color: white;
-    border-color: white;
+  background: transparent;
+  color: white;
+  border-color: white;
 }
-  
+
 .btn-primary {
-    background: var(--color-danger);
-    color: white;
+  background: var(--color-danger);
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 /* NAVBAR */
 
-nav{
-    background: transparent;
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    z-index: 11;
-    cursor: pointer;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: transparent;
+  height: 8vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background-color: var(--white);
+  margin: 8px;
+  opacity: 0;
 }
 
 .window-scroll {
+  background: var(--sandy-brown);
+  box-shadow: 0 1rem 2rem var(--shadow);
+}
+
+/* =============== RESPONSIVIDADE PARA TABLETS ================= */
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  body{
+    overflow-x: hidden;
+  }
+
+  /* =================== NAVBAR =================== */
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 40vw;
+    height: 92vh;
     background: var(--sandy-brown);
-    box-shadow: 0 1rem 2rem var(--shadow);
-}
-
-.nav_container{
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-}
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 10;
+  }
 
-.nav button{
-    display: none;
-}
+  .nav-list li{
+    margin-left: 0;
+    opacity: 0;
+  }
 
-.nav_menu{
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-}
+  .mobile-menu{
+    display: block;
+    cursor: pointer;
+  }
 
-.nav_menu a {
-    font-size: var(--fs-7);
-    transition: var(--transition);
-}
+  .mobile-menu div{
+    opacity: 1;
+  }
 
-.nav_menu a:hover {
-    color: var(--sandy-brown);
+  .nav-list.active{
+    transform: translateX(0);
+  }
+
+  @keyframes navLinkFade{
+    from{
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+/* ======================== RESPONSIVIDADE PARA CELULARES ====================== */
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  /* ============== NAVBAR =============== */
+
+  .nav_menu {
+    right: 3%;
+  }
 }
