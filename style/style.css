@@ -126,6 +126,7 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: black;
 }
 
 /* NAVBAR */
@@ -134,7 +135,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: var(--sandy-brown);
+  background: white;
   box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
   height: 8vh;
 }
@@ -142,6 +143,7 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
+  color: black;
 }
 
 .nav-list li {
@@ -153,6 +155,7 @@ nav {
 }
 
 .nav-list li a {
+  color: black;
   transition: var(--transition);
 }
 
@@ -166,7 +169,7 @@ nav {
 
 .nav-list-account {
   width: 250px;
-  background: var(--sandy-brown);
+  background: white;
   display: none;
   position: absolute;
   top: 100%;

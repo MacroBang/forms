@@ -21,7 +21,7 @@ body{
   /* =================== ASIDE =================== */
   
   .contact_aside {
-    background: var(--sandy-brown);
+    background: white;
     padding: 2rem;
     border-radius: 1rem;
     position: relative;
@@ -30,11 +30,13 @@ body{
   .contact_aside h2 {
     text-align: left;
     margin-bottom: 1rem;
+    color: black;
   }
   
   .contact_aside p {
     font-size: 0.9rem;
     margin-bottom: 2rem;
+    color: black;
   }
   
   .contact_details li {
@@ -42,6 +44,7 @@ body{
     gap: 1rem;
     align-items: center;
     margin-bottom: 1rem;
+    color: black;
   }
   
   .contact_socials {

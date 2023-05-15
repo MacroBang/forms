@@ -30,7 +30,7 @@ a.links{
 
 h1{
   font-size: 40px;
-  color: var(--sandy-brown);
+  color: black;
   padding: 2px 0 10px 0;
   font-weight: bold;
   text-align: center;
@@ -79,7 +79,7 @@ input:not([type="checkbox"]){
 input[type="submit"]{
   width: 100%;
   cursor: pointer;  
-  background: var(--sandy-brown);
+  background: var(--color-danger);
   padding: 8px 5px;
   color: var(--white);
   font-size: 20px;  
@@ -117,7 +117,7 @@ input[type="submit"]:hover{
   font-weight: bold;
   background: var(--white);
   padding: 6px;
-  color: var(--sandy-brown);
+  color: var(--color-danger);
   margin-left: 10px;
  
   -webkit-border-radius: 4px;
