@@ -185,7 +185,7 @@ nav {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background-color: var(--white);
+  color: white;
   margin: 8px;
   opacity: 0;
 }
@@ -209,7 +209,7 @@ nav {
     right: 0;
     width: 40vw;
     height: 45vh;
-    background: var(--sandy-brown);
+    background: black;
     box-shadow: -0.2rem 0.2rem 0.2rem var(--shadow);
     flex-direction: column;
     align-items: center;
