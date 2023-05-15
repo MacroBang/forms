@@ -43,6 +43,7 @@ class ConnectionDB {
         return true;
     }
     
+    //atualizar dados do cliente
     public static function alter($data) {
 
         $conn = self::getConnection();
@@ -67,6 +68,7 @@ class ConnectionDB {
         ]);
     }
 
+    //Exclusão de registro
     public static function delete($id) {
         
         $conn = self::getConnection();
