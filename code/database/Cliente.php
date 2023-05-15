@@ -78,5 +78,4 @@ class ConnectionDB {
         ->bindParam(':id', $id)
         ->execute();
     }
-
 }
