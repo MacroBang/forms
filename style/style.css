@@ -185,7 +185,7 @@ nav {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  color: white;
+  background: white;
   margin: 8px;
   opacity: 0;
 }
