@@ -138,8 +138,8 @@ input[type="submit"]:hover{
   position: absolute;
   top: 0;
   width: 95%;   
-  padding: 18px 6% 60px 6%;
-  margin: 0 0 35px 0;
+  padding: 0px 6% 60px 6%;
+  margin: 15px 0px 35px 0px;
   background: var(--white);
   border: 1px solid var(--spanish-gray);
    
