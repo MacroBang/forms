@@ -126,6 +126,7 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  color: black;
 }
 
 /* NAVBAR */
@@ -134,20 +135,52 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: transparent;
+  background: white;
+  box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
   height: 8vh;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
+  color: black;
 }
 
 .nav-list li {
   letter-spacing: 3px;
   margin-left: 32px;
   cursor: pointer;
+  position: relative;
+  margin: 12px;
 }
+
+.nav-list li a {
+  color: black;
+  transition: var(--transition);
+}
+
+.nav-list li a:hover {
+  margin: 2px;
+  padding: 2px;
+  transition: var(--transition);
+}
+
+/* =============== DROPDOWN (MINHA CONTA) ================= */
+
+.nav-list-account {
+  width: 250px;
+  background: white;
+  display: none;
+  position: absolute;
+  top: 100%;
+  box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
+}
+
+.nav-list li:hover .nav-list-account {
+  display: block;
+}
+
+/* =================== MENU HAMBURGUER ===================== */
 
 .mobile-menu div {
   width: 32px;
@@ -155,11 +188,6 @@ nav {
   background-color: var(--white);
   margin: 8px;
   opacity: 0;
-}
-
-.window-scroll {
-  background: var(--sandy-brown);
-  box-shadow: 0 1rem 2rem var(--shadow);
 }
 
 /* =============== RESPONSIVIDADE PARA TABLETS ================= */
@@ -180,9 +208,9 @@ nav {
     top: 8vh;
     right: 0;
     width: 40vw;
-    height: 40vh;
+    height: 45vh;
     background: var(--sandy-brown);
-    box-shadow: 1rem 0.3rem 5rem var(--shadow);
+    box-shadow: -0.2rem 0.2rem 0.2rem var(--shadow);
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
