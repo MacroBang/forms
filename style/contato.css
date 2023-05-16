@@ -4,17 +4,18 @@ body{
 
 .contact{
   margin: 40px;
+  height: 100px;
 }
 
 .contact_container {
-    background: var(--onyx);
-    padding: 4rem;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    gap: 4rem;
-    height: 35rem;
-    margin: 7rem auto;
-    border-radius: 1rem;
+  display: grid;
+  padding: 4rem;
+  margin: 7rem auto;
+  height: 35rem;
+  border-radius: 1rem;
+  gap: 4rem;
+  grid-template-columns: 40% 60%;
+  background: var(--color4);
   }
   
   /* =================== ASIDE =================== */
@@ -130,7 +131,7 @@ body{
       .contact_container{
           grid-template-columns: 1fr;
           gap: 3rem;
-          margin-top: 0;
+          margin-top: 2px;
           padding: 0;
       }
   

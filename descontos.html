@@ -23,29 +23,49 @@
 <body>
   <!-- ================== NAVBAR ==================-->
 
-   <header>
-    <nav class="nav-menu">
-      <a class="logo" href="index.html">Market Name</a>
-      <div class="mobile-menu">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
-      </div>
-      <ul class="nav-list">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./descontos.html">Descontos</a></li>
-        <li><a href="./mercado.html">Mercado</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-        <li>Minha Conta <img src="images/down-arrow.svg" class="down-arrow">
-          <ul class="nav-list-account">
-            <li><a href="cadastro.html#paralogin" >Entre</a></li>
-            <li><a href="cadastro.html#paracadastro" >Cadastre-se</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+  <div id="navbar-placeholder"></div>
 
+  <!-- NAV BAR MERCADO -->
+
+  <div id="navbar-market-placeholder"></div>
+
+  <!-- HEADER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- SCRIPT PARA IMPORTAR NAVBAR -->
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-placeholder').innerHTML = html;
+      })
+  </script>
+
+  <!-- SCRIPT PARA IMPORTAR NAVBAR MERCADO -->
+
+  <script>
+    fetch('navbar-mercado.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-market-placeholder').innerHTML = html;
+      })
+  </script>
+
+  <!-- LINK PASTA JS -->
 
   <script src="./script/mobile-navbar.js"></script>
 </body>

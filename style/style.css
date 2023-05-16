@@ -1,41 +1,17 @@
 :root {
   /* cores */
 
-  --spanish-gray: #999999;
-  --sonic-silver: #787878;
-  --seric-black: #212121;
-  --salmon-pink: #ff8f9c;
-  --sandy-brown: #f6a355;
-  --bittersweet: #ff8f8f;
-  --ocean-green: #46c389;
-  --cultured: #ededed;
+  --color1: #ff0000;
+  --color2: #999999;
+  --color3: #f6a355;
+  --color4: #212121;
+  --color5: #ededed;
   --white: #ffffff;
   --black: #000000;
-  --onyx: #454545;
   --shadow: #00000099;
   --success: #00bf8e;
   --warning: #f7c94b;
   --color-danger: #f75842;
-
-  /* tipografia */
-
-  --fs-1: 1.563rem;
-  --fs-2: 1.375rem;
-  --fs-3: 1.25rem;
-  --fs-4: 1.125rem;
-  --fs-5: 1.1rem;
-  --fs-6: 0.938rem;
-  --fs-7: 0.875rem;
-  --fs-8: 0.813rem;
-  --fs-9: 0.875rem;
-  --fs-10: 0.688rem;
-  --fs-11: 0.625rem;
-
-  --weight-300: 300;
-  --weight-300: 400;
-  --weight-300: 500;
-  --weight-300: 600;
-  --weight-300: 700;
 
   /* RESPONSIVIDADE */
 
@@ -75,7 +51,7 @@ h4 {
 }
 
 a {
-  color: white;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -93,7 +69,7 @@ a {
 body {
   line-height: var(--fs-1);
   color: var(--white);
-  background: var(--spanish-gray);
+  background: var(--color2);
   overflow: hidden;
 }
 
@@ -101,8 +77,8 @@ body {
 
 .btn {
   display: inline-block;
-  background: white;
-  color: black;
+  background: var(--white);
+  color: var(--black);
   padding: 1rem 2.5rem;
   border: 1px solid transparent;
   border-radius: 1.5rem;
@@ -113,20 +89,20 @@ body {
 
 .btn:hover {
   background: transparent;
-  color: white;
-  border-color: white;
+  color: var(--white);
+  border-color: var(--white);
 }
 
 .btn-primary {
   background: var(--color-danger);
-  color: white;
+  color: var(--white);
 }
 
 .logo {
   font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: black;
+  color: var(--black);
 }
 
 /* NAVBAR */
@@ -135,7 +111,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: white;
+  background: var(--white);
   box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
   height: 8vh;
 }
@@ -143,7 +119,10 @@ nav {
 .nav-list {
   list-style: none;
   display: flex;
-  color: black;
+}
+
+.nav-list list{
+  color: var(--black);
 }
 
 .nav-list li {
@@ -155,7 +134,7 @@ nav {
 }
 
 .nav-list li a {
-  color: black;
+  color: var(--black);
   transition: var(--transition);
 }
 
@@ -169,16 +148,21 @@ nav {
 
 .nav-list-account {
   width: 250px;
-  background: white;
   display: none;
   position: absolute;
   top: 100%;
-  box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
   right: 0;
+  background: var(--white);
+  box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
+}
+
+.my-account{
+  color: black;
 }
 
 .nav-list li:hover .nav-list-account {
   display: block;
+  z-index: 10;
 }
 
 /* =================== MENU HAMBURGUER ===================== */
@@ -186,9 +170,40 @@ nav {
 .mobile-menu div {
   width: 32px;
   height: 2px;
-  background: black;
+  background: var(--black);
   margin: 8px;
   opacity: 0;
+}
+
+/* =================== NAV PARA O A PAGINA PRINCIPAL E MERCADO ============= */
+
+nav.market{
+  display: flex;
+  height: 5vh;
+  color: var(--white);
+  background-color: var(--color1);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-market li a{
+  color: var(--white);
+}
+
+.logo-market{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: var(--white);
+}
+
+.nav-market li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    cursor: pointer;
+    position: relative;
+    margin: 12px;
+    font-size: 14px;
 }
 
 /* =============== RESPONSIVIDADE PARA TABLETS ================= */
@@ -210,7 +225,7 @@ nav {
     right: 0;
     width: 50vw;
     height: 55vh;
-    background: white;
+    background: var(--white);
     box-shadow: -0.3rem 0.3rem 0.3rem var(--shadow);
     flex-direction: column;
     align-items: center;
@@ -258,6 +273,7 @@ nav {
     }
   }
 }
+
 /* ======================== RESPONSIVIDADE PARA CELULARES ====================== */
 
 @media screen and (max-width: 600px) {
