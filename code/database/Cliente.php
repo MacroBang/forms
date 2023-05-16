@@ -10,7 +10,7 @@ class ConnectionDB {
         if (empty(self::$conn)) {
 
             //abre o arquivo que contém o 
-            $conn = parse_ini_file('code\config\acesso.ini');
+            $conn = parse_ini_file('../config/acesso.ini');
             $localhost = $conn['localhost'];
             $database = $conn['database'];
             $user = $conn['user'];
